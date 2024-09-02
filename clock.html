@@ -4,21 +4,31 @@
 <meta charset="UTF-8">
 <title>SVG Clock</title>
 </head>
-<body style="background-color: #46C2D4">
+<body style="
+background-color: #46C2D4;
+
+position: relative;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+display: flex;
+align-items: center;
+justify-content: center;
+">
 
 <svg id="clock-svg" width="100%" viewBox="0 0 2000 1000">  
   <defs>
     <!-- 時計部分 -->
     <g id="secondHand">
-      <line id="secondHandLine" x1="0" y1="-330" x2="0" y2="0" stroke="#41B4C5" stroke-width="10" transform="rotate(0)" stroke-opacity="0.75"/>
+      <line id="secondHandLine" x1="0" y1="-330" x2="0" y2="0" stroke="#c4c4c4" stroke-width="10" transform="rotate(0)" stroke-opacity="0.75"/>
     </g>
     
     <g id="minuteHand">
-      <line id="minuteHandLine" x1="0" y1="-280" x2="0" y2="0" stroke="#2E818D" stroke-width="15" transform="rotate(0)" stroke-opacity="0.75"/>
+      <line id="minuteHandLine" x1="0" y1="-280" x2="0" y2="0" stroke="#8c8c8c" stroke-width="15" transform="rotate(0)" stroke-opacity="0.75"/>
     </g>
     
     <g id="hourHand">
-      <line id="hourHandLine"   x1="0" y1="-230" x2="0" y2="0" stroke="#2E818D" stroke-width="20" transform="rotate(0)" stroke-opacity="0.75"/>
+      <line id="hourHandLine"   x1="0" y1="-230" x2="0" y2="0" stroke="#8c8c8c" stroke-width="20" transform="rotate(0)" stroke-opacity="0.75"/>
     </g>
     
     <g id="hourScale">
@@ -111,8 +121,8 @@
 
     <g id="calendar">
       <!-- 背景 -->
-      <rect x="0" y="0"   width="720" height="300" fill="#4ECDC4" style="opacity: 0.5"/>
-      <rect x="0" y="300" width="720" height="600" fill="#fff"    style="opacity: 0.75;"/>
+      <rect x="0" y="0"   width="720" height="300" fill="#cccccc" style="opacity: 0.5;"/>
+      <rect x="0" y="300" width="720" height="600" fill="#fff"    style="opacity: 0.5;"/>
       <!-- 月の表示 -->
       <text id="calendarMonth"x="100" y="130" font-size="100" fill="#fff"></text>
       <!-- 年の表示　-->
